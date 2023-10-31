@@ -1,0 +1,115 @@
+/* Name: KRISH PATEL
+  File Name: lab3.css
+  Date: 17/06/2023
+  Description: This css file will style the whole  flexbox webpage.
+*/
+
+  body,
+  h1,
+  h2,
+  p,
+  div,
+  header,
+  main,
+  section,
+  footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    background-color: #333;
+    color: white;
+  }
+
+  header {
+    padding: 22px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .box {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    min-width: 200px;
+  }
+
+  .box {
+    flex: 1;
+  }
+  
+  footer p {
+    margin: 20px;
+  }
+
+  @media  (max-width: 600px) {
+    
+    .container {
+      flex-direction: column;
+    }
+    
+
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 20px;
+    color: rgb(16, 16, 16);
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .orange {
+    background-color:orange;
+  }

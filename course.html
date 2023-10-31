@@ -1,0 +1,126 @@
+<!-- Name: KRISH PATEL-->
+<!-- File Name: course.html -->
+<!-- Date: 01/07/2023 -->
+<!-- Brief Description: This a course page which shows the course in my program with some functionality using JavaScript. -->
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Your Name - Courses</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="style.css">
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <h1>Courses</h1>
+                <input type="text" id="search" placeholder="Search course">
+                <button onclick="searchCourse()">Search</button>
+
+                <h2>Filter by Semester</h2>
+                <select id="filterSemester" onchange="filterCourses()">
+                    <option value="all">All Levels</option> 
+                    <option value="Sem 1">Semester 1</option>
+                    <option value="Sem 2">Semester 2</option>
+                </select>
+
+                <h2>Sort by Level</h2>
+                <select id="sortLevel" onchange="sortCourses()">
+                    <option value="asc">Lowest to Highest</option>
+                    <option value="desc">Highest to Lowest</option>
+                </select>
+
+                <ul id="courseList">
+                <!-- Semester 1 Courses -->
+                <li>
+                    <h3>Introduction to Computer Programming</h3>
+                    <p>Level: Sem 1</p>
+                    <p>Code: CST8116</p>
+                    <p>Description: The essential ideas and methods of computer programming are introduced in this course.Using Java, a high-level programming language, we have developed our abilities in algorithm design and implementation as well as problem-solving techniques.</p>
+                </li>
+                <li>
+                    <h3>Computer Essentials</h3>
+                    <p>Level: Sem 1</p>
+                    <p>Code: CST8118</p>
+                    <p>Description: The fundamental hardware and software elements of a computer system are covered in this course. Computer architecture, operating systems, networking, and security are among the subjects covered.We have gained practical expertise with installing, configuring, and repairing computer hardware and software as well as a fundamental introduction to vmware.</p>
+                </li>
+                <li>
+                    <h3>Introduction to Database</h3>
+                    <p>Level: Sem 1</p>
+                    <p>Code: CST8215</p>
+                    <p>Description: The core ideas and tenets of database management systems are covered in this course. With the aid of the MySQL WorkBench programme, we had learned about data modelling, relational database architecture, SQL programming, and fundamental database management. The academic topics will be reinforced through practical exercises and projects.</p>
+                </li>
+                <li>
+                    <h3>Achieving Success in Changing Environments</h3>
+                    <p>Level: Sem 1</p>
+                    <p>Code: CST8300</p>
+                    <p>Description: The goal of this course is to help students acquire the crucial professional and personal skills needed to succeed in today's fast-paced workplaces. Time management, goal-setting, effective communication, teamwork, problem-solving, and adaptation are among the subjects covered. The purpose of the interactive activities and reflection exercises is to help students improve personally and professionally.</p>
+                </li>
+                <li>
+                    <h3>Communications I</h3>
+                    <p>Level: Sem 1</p>
+                    <p>Code: ENL1813T</p>
+                    <p>Description: In a professional setting, this course places a strong emphasis on good written and oral communication abilities. They can now conduct presentations, participate in group discussions, and prepare business papers that are clear and succinct. Grammar, vocabulary, organisation, and critical thinking will all be emphasised.</p>
+                </li>
+                <li>
+                    <h3>Technical Mathematics for Computer Science</h3>
+                    <p>Level: Sem 1</p>
+                    <p>Code: MAT8001C</p>
+                    <p>Description: A mathematical basis for computer science is provided by this course. Algebra, functions, logarithms, exponentials, trigonometry, vectors, matrices, and discrete mathematics are among the subjects studied. The focus of the course is on applying mathematical ideas to challenges in computer science and problem-solving.</p>
+                </li>
+
+                <!-- Semester 2 Courses -->
+                <li>
+                    <h3>Database Systems</h3>
+                    <p>Level: Sem 2</p>
+                    <p>Code: CST2355</p>
+                    <p>Description: The ideas covered in Introduction to Database are expanded upon in this course. We will examine more complex issues in database management, querying, and design as students. We will study transaction processing, relational database management systems, normalisation strategies, and database security. Theoretical principles will be reinforced through practical activities and projects.</p>
+                </li>
+                <li>
+                    <h3>Object-Oriented Programming (Java)</h3>
+                    <p>Level: Sem 2</p>
+                    <p>Code: CST8284</p>
+                    <p>Description: Using the Java programming language, this course covers the concepts and methods of object-oriented programming. Classes, objects, inheritance, polymorphism, and other object-oriented ideas will be covered with the students. Through real-world projects and exercises, they will create apps and get practical Java programming skills.</p>
+                </li>
+                <li>
+                    <h3>Operating System Fundamentals (GNU/Linux)</h3>
+                    <p>Level: Sem 2</p>
+                    <p>Code: CST8102</p>
+                    <p>Description: With an emphasis on GNU/Linux, this course offers an overview of operating systems. The structure, elements, and features of operating systems will be taught to the students. Process management, memory management, file systems, device management, and shell scripting are among the subjects covered. Hands-on experience using GNU/Linux will be provided via practical exercises and lab work.</p>
+                </li>
+                <li>
+                    <h3>Web Programming</h3>
+                    <p>Level: Sem 2</p>
+                    <p>Code: CST8285</p>
+                    <p>Description: The tools and methods used in web development are examined in this course. Databases, HTML, CSS, JavaScript, PHP, and client- and server-side web development will all be covered in class. Through real-world projects and exercises, they will create dynamic web apps and get hands-on practise with web programming.</p>
+                </li>
+                <li>
+                    <h3>Technical Communication for Engineering Technologies</h3>
+                    <p>Level: Sem 2</p>
+                    <p>Code: ENL2019T</p>
+                    <p>Description: For engineering and technical workers, this course focuses on improving communication skills. The ability to prepare technical reports, proposals, and documentation, as well as give polished presentations, will be taught to students. In technical communication, emphasis will be made on precision, conciseness, and clarity.</p>
+                </li>
+                <li>
+                    <h3>Cooperative Education and Job Readiness</h3>
+                    <p>Level: Sem 2</p>
+                    <p>Code: GEP1001</p>
+                    <p>Description: This course gives students job preparation skills and prepares them for cooperative education work periods. The principles of professionalism in the workplace, resume writing, interview methods, and ethics will all be taught to the students. They will create a career portfolio and learn more about what companies in the field are looking for.</p>
+                </li>
+            </ul>
+                <script src="script.js"></script>
+            </main>
+
+            <footer>
+                <p>&copy; 2023 KRISH PATEL</p>
+            </footer>
+        </body>
+    </html>
